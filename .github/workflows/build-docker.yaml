@@ -18,6 +18,6 @@ jobs:
         if: env.DOCKER_HUB_USER == ''
         uses: docker/login-action@v2
         with:
-        # Use existing DockerHub credentials present as secrets
-        username: ${{ secrets.DOCKER_HUB_USER }}
-        password: ${{ secrets.DOCKER_HUB_TOKEN }}
+          # Use existing DockerHub credentials present as secrets
+          username: ${{ secrets.DOCKER_HUB_USER }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
