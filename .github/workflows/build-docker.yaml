@@ -18,6 +18,6 @@ jobs:
         with:
           # Use existing DockerHub credentials present as secrets
           #username: ${{ secrets.DOCKER_HUB_USER }}
-          username: ${{ secrets.DOCKER_HUB_USET }}
+          username: ${{ secrets.DOCKER_HUB_USER }}
           #password: ${{ secrets.DOCKER_HUB_TOKEN }}
-          password: ${{ secrets.FOCKER_HUB_TOKEN }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
