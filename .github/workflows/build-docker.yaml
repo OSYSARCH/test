@@ -11,6 +11,7 @@ on:
 
 jobs: 
   docker-login:
+    runs-on: ubuntu-latest
     steps:
       - name: DockerHub login
         env:
