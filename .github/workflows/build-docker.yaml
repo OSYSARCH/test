@@ -1,13 +1,20 @@
 name: Build - Docker image (SemVer)
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+  workflow_call:
+    inputs:
+      imageName:
+        required: true
+        type: string
+        description: Name the built image should get
+      dockerfilePath:
+        required: true
+        type: string
+        description: Path to where the Dockerfile to build is
+      push:
+        required: true
+        type: boolean
+        description: Whether to also push created image or just build it
 
 jobs: 
   docker-login:
