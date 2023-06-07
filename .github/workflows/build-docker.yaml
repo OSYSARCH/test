@@ -15,11 +15,6 @@ on:
         required: true
         type: boolean
         description: Whether to also push created image or just build it
-    secrets:
-      password:
-        required: true
-      username:
-        required: true
 
 jobs: 
   docker-login:
