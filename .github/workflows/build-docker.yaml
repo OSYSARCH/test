@@ -15,14 +15,11 @@ on:
         required: true
         type: boolean
         description: Whether to also push created image or just build it
+    secrets:
       username:
         required: true
-        type: string
-        description: Whether to also push created image or just build it
       password:
         required: true
-        type: string
-        description: Whether to also push created image or just build it
 
 jobs: 
   docker-login:
