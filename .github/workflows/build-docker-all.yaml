@@ -15,6 +15,9 @@ jobs:
       imageName: pool
       dockerfilePath: ./bpdm-pool/Dockerfile
       push: ${{ github.event_name != 'pull_request' }}
+      username: ${{ secrets.DOCKER_HUB_USER }}
+      password: ${{ secrets.DOCKER_HUB_TOKEN }}
+
 #
 #jobs: 
 #  docker-login:
